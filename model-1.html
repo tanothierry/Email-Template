@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email-Template</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            font-size: 16px;
+            font-family: 'roboto', sans-serif;
+        }
+        
+        
+        .main-content{
+            height: 100vh;
+            width: 100%;
+            background-color: #c3c3c3;
+            position: relative;
+        }
+        
+        .cardEmail{
+            min-height: 350px;
+            width: 33%;
+            margin: 0 auto;
+            background-color: white;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .cardEmail-illustration{
+            height: 80px;
+            width: 100%;
+            background-color: rgb(34, 60, 116);
+            position: relative;
+        }
+        
+        .cardEmail-illustration img{
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .cardEmail-info{
+            padding: 30px 25px;
+            text-align: center;
+        }
+        
+        .cardEmail-info p{
+            margin: 20px 0;
+        }
+        
+        .btnlink{
+            border: none;
+            padding: 12px 20px;
+            background-color: orange;
+            color: white;
+            font-size: 18px;
+            transition: all .4s;
+            cursor: pointer;
+        }
+        
+        .btnlink:hover{
+            transform: translateY(5%);
+        }
+        
+        .footer{
+            position: absolute;
+            bottom: 2%;
+            left: 50%;
+            transform: translate(-50%, -2%);
+            text-align: center;
+        }
+        
+        .icon-logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0 15px;
+        }
+        
+        .circle{
+            width: 40px;
+            height: 40px;
+            background-color: brown;
+            border-radius: 50%;
+            margin: 3px;
+            transition: all .3s;
+        }
+        
+        .circle img{
+            height: 40px;
+            padding: 10px;
+        }
+        
+        .logo-facebook{
+            background-color: #1254ab;
+        }
+        
+        .logo-twitter{
+            background-color: #0aaafe;
+        }
+        
+        .logo-google{
+            background-color: #f65a5b;
+        }
+        
+        .circle:hover{
+            transform: scale(1.1);
+        }
+        
+        @media screen and (max-width:895px){
+            .cardEmail{
+                min-height: 400px;
+                width: 50%;
+                margin: 0 auto;
+                background-color: white;
+                position: absolute;
+                top: 45%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        
+        @media screen and (max-width:591px){
+            .cardEmail{
+                min-height: 400px;
+                width: 80%;
+                margin: 0 auto;
+                background-color: white;
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        
+            .cardEmail-illustration {
+                height: 60px;
+                width: 100%;
+            }
+        
+            .footer {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                text-align: center;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="main-content">
+        <div class="cardEmail">
+            <div class="cardEmail-illustration">
+                <img src="img/mail.svg" alt="" class="img-fluid">
+            </div>
+            <div class="cardEmail-info">
+                <h3>Email Confirmation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quasi vitae, ducimus rem aut
+                    porro voluptatum incidunt asperiores.Neque quo laboriosam ipsam repellendus animi atque.
+                </p>
+                <a href="#">
+                    <button type="button" class="btnlink">Verify email adress</button>
+                </a>
+            </div>
+        </div>
+        <footer class="footer">
+            <h4>stay in touch</h4>
+            <div class="icon-logo">
+                <div class="circle logo-facebook">
+                    <img src="img/facebook.svg" alt="logo facebook">
+                </div>
+                <div class="circle logo-twitter">
+                    <img src="img/twitter.svg" alt="logo twitter">
+                </div>
+                <div class="circle logo-google">
+                    <img src="img/google-plus.svg" alt="logo google">
+                </div>
+            </div>
+            <p>&copy; copyrigth 2020 design by Thierry</p>
+        </footer>
+    </div>
+
+    
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

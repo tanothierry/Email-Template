@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email-Template</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            font-size: 16px;
+            font-family: 'roboto', sans-serif;
+        }
+        
+        
+        .main-content{
+            height: 100vh;
+            width: 100%;
+            background-color: #dddddd;
+            position: relative;
+        }
+        
+        .cardEmail{
+            min-height: 500px;
+            width: 50%;
+            margin: 0 auto;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-top: 3px solid #afafaf;
+        }
+        
+        .cardEmail-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 23px;
+        }
+        
+        .cardEmail-header_title h6,
+        .cardEmail-header_title p{
+            margin-bottom: 0;
+        }
+        
+        .cardEmail-header_title h6{
+            font-weight: bold;
+        }
+        
+        .cardEmail-header_title p{
+            font-size: 15px;
+            font-weight: 400;
+            color: #acaaaa;
+        }
+        
+        .cardEmail-header_illustration{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid gray;
+        }
+        
+        .cardEmail-header_illustration img{
+            border-radius: 50%;
+            height: 50px;
+            object-fit: cover;
+        }
+        
+        hr{
+            margin: 0 auto;
+            width: 90%;
+        }
+        
+        .cardEmail-body{
+            padding: 24px;
+        }
+        
+        .btnlink{
+            border: none;
+            background: green;
+            color: white;
+            padding: 10px 16px;
+            font-size: 18px;
+            margin: 10px 0 19px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .btnlink:focus{
+            outline: none;
+        }
+        
+        .text-center{
+            text-align: center;
+            margin: 10px 0 19px;
+        }
+        
+        .footer{
+            text-align: center;
+        }
+        
+        .icon-logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0 15px;
+        }
+        
+        .circle{
+            width: 40px;
+            height: 40px;
+            background-color: brown;
+            border-radius: 50%;
+            margin: 3px;
+            transition: all .3s;
+        }
+        
+        .circle img{
+            height: 40px;
+            padding: 10px;
+        }
+        
+        .logo-facebook{
+            background-color: #1254ab;
+        }
+        
+        .logo-twitter{
+            background-color: #0aaafe;
+        }
+        
+        .logo-google{
+            background-color: #f65a5b;
+        }
+        
+        .circle:hover{
+            transform: scale(1.1);
+        }
+
+        @media screen and (max-width:706px){
+            .cardEmail{
+                min-height: 500px;
+                width: 85%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-content">
+        <div class="cardEmail">
+            <div class="cardEmail-header">
+                <div class="cardEmail-header_title">
+                    <h6>Hi John DOE</h6>
+                    <p>welcome to <strong>France24</strong></p>
+                </div>
+                <div class="cardEmail-header_illustration">
+                    <img src="img/user.png" alt="user" class="img-fluid">
+                </div>
+            </div>
+            <hr>
+            <div class="cardEmail-body">
+                <p>Please take a second to confirm <a href="#mailto">tanothierry@gmail.com</a> a your email address :</p>
+                <div class="text-center">
+                    <a href="#">
+                        <button type="button" class="btnlink">Confirm Email</button>
+                    </a>
+                </div>
+                <p>Once you do, you'il be able to opt-in to notifications
+                    of activity and acces other features that require a
+                    valid email address.
+                </p>
+                <p>
+                    High fives, <br>
+                    Team <strong>France24</strong>
+                </p>
+            </div>
+            <hr>
+            <footer class="footer">
+                <div class="icon-logo">
+                    <div class="circle logo-facebook">
+                        <img src="img/facebook.svg" alt="logo facebook">
+                    </div>
+                    <div class="circle logo-twitter">
+                        <img src="img/twitter.svg" alt="logo twitter">
+                    </div>
+                    <div class="circle logo-google">
+                        <img src="img/google-plus.svg" alt="logo google">
+                    </div>
+                </div>
+                <p>&copy; copyrigth 2020 design by Thierry</p>
+            </footer>
+        </div>
+    </div>
+
+    
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
